@@ -1,0 +1,7 @@
+[GLOBAL]
+plugin.tx_fed.fce.fluidcontent_zf4_grid {
+	label = ZF4 Grid
+	templateRootPath = EXT:fluidcontent_zf4_grid/Resources/Private/Templates/
+	partialRootPath = EXT:fluidcontent_zf4_grid/Resources/Private/Partials/
+  layoutRootPath = EXT:fluidcontent_zf4_grid/Resources/Private/Layouts/
+}

@@ -1,0 +1,43 @@
+{namespace v=Tx_Vhs_ViewHelpers}
+{namespace flux=Tx_Flux_ViewHelpers}
+<f:layout name="Content" />
+<div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:flux="http://fedext.net/ns/flux/ViewHelpers"
+     xmlns:v="http://fedext.net/ns/vhs/ViewHelpers"
+     xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+
+		 <f:section name="Configuration">
+				 <flux:flexform wizardTab="ZF4 Grid" id="cols-2-75-25" 
+						 icon="{v:extension.path.resources(path: 'Icons/Cols-2-75-25.png')}"
+						 label="2 columnas (75/25)" description="">
+
+						 <flux:flexform.grid>
+										 <flux:flexform.grid.row>
+												 <flux:flexform.grid.column style="width: 75%">
+														 <flux:flexform.content name="content.0" label="Columna" />
+												 </flux:flexform.grid.column>
+												 <flux:flexform.grid.column style="width: 25%">
+														 <flux:flexform.content name="content.1" label="Columna" />
+										 </flux:flexform.grid.column>
+								 </flux:flexform.grid.row>
+						 </flux:flexform.grid>
+
+				 </flux:flexform>
+		 </f:section>
+
+<f:section name="Preview">
+		<flux:widget.grid />
+</f:section>
+
+<f:section name="Main">
+		<div class="row">
+  			<div class="large-9 columns">
+						<flux:flexform.renderContent area="content.0" />
+				</div>
+  			<div class="large-3 columns">
+						<flux:flexform.renderContent area="content.1" />
+				</div>
+		</div>
+</f:section>
+
+
