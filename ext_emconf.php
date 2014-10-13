@@ -33,6 +33,7 @@ $EM_CONF[$_EXTKEY] = array(
 			'extbase' => '6.0',
 			'fluid' => '6.0',
 			'typo3' => '6.0',
+			'flux' => '7.0-7.0.99',
 		),
 		'conflicts' => array(
 		),
